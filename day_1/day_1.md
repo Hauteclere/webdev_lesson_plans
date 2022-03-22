@@ -10,7 +10,7 @@
 ## Rule 1 - CONSTANT VIGILANCE
 Javascript requires us to be a bit more disciplined than other languages - it will allow us to write code the wrong way, and try to interpret it for us anyway. The best way to avoid mistakes is to stay vigilant, and not depend on the interpreter to rescue our bad code.
 
-## Statements vs Expressions
+## Reminder: Statements vs Expressions
 A statement is a single command. It is a discrete chunk of code that can be executed to make something **happen**. Statements can can be long or short, and can span multiple lines. Any time you tell the interpreter to _do something_, you're executing a statement.
 
 An expression is a piece of code that can be evaluated. It is a discrete chunk of code that can be executed to **produce a value**. Any time you tell the interpreter to _use the value_ of something, you're evaluating an expression.
@@ -54,6 +54,16 @@ puts "Hello world"
 // Javascript
 
 console.log("Hello world");
+```
+
+You don't need a semicolon at the end of a code block:
+
+```Javascript
+// Javascript
+
+for(let i=0; i<3; i++){ 
+    console.log("hi!"); 
+} // no semicolon here
 ```
 
 
@@ -159,7 +169,7 @@ In Ruby, **everything** is an object. This makes coding a bit simpler sometimes,
 
 The downside is that this can be slower. Objects are complex, and can chew up memory. Javascript gains a bit of efficiency by having a second, smaller type of data - the *primitive*.
 
-Primitives exist solely as a value. They can't be given properties, and they can't be altered. If you want to convert a string to uppercase, you need to reassign it with the new value!
+Primitives exist solely as a value. They can't be given properties, and they are immutable. If you want to convert a string to uppercase, you need to reassign it with the new value!
 
 The primitive types are:
 
@@ -290,7 +300,61 @@ We have `while` loops:
 ```Javascript
 // javascript
 
+let count = 0;
 
+while (count < 3) {
+    console.log("hi");
+    count += 1;
+}
+```
+
+`do-while` loops:
+
+```Javascript
+// javascript
+
+let count = 0;
+
+do {
+    console.log("hi");
+    count += 1;
+} while (count < 3);
+```
+
+`for` loops:
+
+```Javascript
+// javascript
+
+for (let i = 0; i < 5; i++) {
+  text += "The number is " + i + "<br>";
+}
+```
+
+`for-in` loops (for iterating through the properties of objects):
+
+
+```Javascript
+// javascript
+
+const person = {fname:"Oliver", lname:"Lavers"};
+
+let text = "";
+for (let x in person) {
+  text += person[x];
+}
+```
+
+and `for-of` loops (for iterating through the values of iterables. use these to loop through arrays!):
+
+```Javascript
+// javascript
+
+const ingredients = ["onions", "garlic", "celery", "balsamic vinegar"];
+
+for (let element of ingredients) {
+  console.log(element);
+}
 ```
 
 ## "Falsy" and "Truthy" values
@@ -304,4 +368,23 @@ Almost every value in Javascript is `truthy`. The exceptions are:
 - The `undefined` value
 - `NaN`, which means "Not a Number"
 
+## Switch/Case
 
+Looks like this!
+
+```Javascript
+// javascript
+
+switch(expression) {
+  case x:
+    // code block
+    break; 
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
+```
+
+Note those `break;` statements! If you don't include those, the interpreter will execute every case after the first match it finds!
