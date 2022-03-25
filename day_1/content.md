@@ -1,4 +1,5 @@
 # Ruby vs JavaScript - Day 1
+ 
  - Talk about assessment!! 
  - Talk about hackathon!!
  - Remember: managing workload is part of being professional. Do both.
@@ -6,6 +7,12 @@
 ```brew install node```
 
 ```sudo apt install nodejs```
+
+## History of JS:
+
+- Why does it exist?
+- NOT related to Java
+- ES6!! Big update in 2016. Lots of new features, lots of stuff now deprecated.
 
 ## Rule 1 - CONSTANT VIGILANCE
 Javascript requires us to be a bit more disciplined than other languages - it will allow us to write code the wrong way, and try to interpret it for us anyway. The best way to avoid mistakes is to stay vigilant, and not depend on the interpreter to rescue our bad code.
@@ -43,7 +50,7 @@ Ruby lets us terminate a statement with a simple line break. Starting a new line
 
 In Javascript, statements should be terminated with a semicolon: `;`
 
-Strictly speaking, a statement without a semicolon at the end of it is a syntax error, however... The interpreter will help you out most of the time, and insert them where you've forgotten them. But sometimes it will betray you! So you should always include them, to be as correct as possible.  CONSTANT VIGILANCE! Example:
+Strictly speaking, a statement without a semicolon at the end of it is a syntax error, however... The interpreter will help you out most of the time, and insert them where you've forgotten them. This means they're optional. Example:
 
 ```Ruby
 # Ruby
@@ -54,7 +61,11 @@ puts "Hello world"
 // Javascript
 
 console.log("Hello world");
+console.log("Hello world again!") // no semicolon, still works!
 ```
+
+> Sometimes the interpreter will betray you! I try to always include them, to be as correct as possible, and to avoid tricky bugs.  CONSTANT VIGILANCE! 
+>> Other developers say the opposite. It's up to you. Just be consistent!
 
 You don't need a semicolon at the end of a code block:
 
@@ -388,3 +399,8 @@ switch(expression) {
 ```
 
 Note those `break;` statements! If you don't include those, the interpreter will execute every case after the first match it finds!
+
+# Challenge:
+[Alphabet Encoder](https://www.codewars.com/kata/546f922b54af40e1e90001da)
+
+> extra challenge: write a second function that will take a string of numbers separated by spaces, and encode them back into plaintext!
