@@ -1,6 +1,6 @@
 # Day 2
 
-## [Kahoot](https://create.kahoot.it/my-library/kahoots/bc360356-a449-4670-9e1b-c34a4ff8fe02) here, first.
+## [Kahoot](https://create.kahoot.it/my-library/kahoots/bc360356-a449-4670-9e1b-c34a4ff8fe02) here, first. --> ~9.40am
 
 ## Content:
 
@@ -157,4 +157,4 @@ const functionB = () => {
 - The `var` keyword gives **function scope** when called inside a function. *This can be a source of bugs!*
 - Calling `let`, `const` or `var` outside of a block or function, or declaring a variable with no keyword at all, gives **global scope**. *This can be a MAJOR source of bugs!*
 
-
+## Challenge: [here](https://www.codewars.com/kata/525f3eda17c7cd9f9e000b39/) 

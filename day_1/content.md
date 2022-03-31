@@ -1,5 +1,6 @@
 # Ruby vs JavaScript - Day 1
  
+ - Standup at 9.30am!
  - Talk about assessment!! 
  - Talk about hackathon!!
  - Remember: managing workload is part of being professional. Do both.
@@ -16,6 +17,11 @@
 
 ## Rule 1 - CONSTANT VIGILANCE
 Javascript requires us to be a bit more disciplined than other languages - it will allow us to write code the wrong way, and try to interpret it for us anyway. The best way to avoid mistakes is to stay vigilant, and not depend on the interpreter to rescue our bad code.
+
+```JS
+// Why Javascript shouldn't be trusted:
+alert((![]+[])[+[]]+(![]+[])[+!+[]]+([![]]+[][[]])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]);
+```
 
 ## Reminder: Statements vs Expressions
 A statement is a single command. It is a discrete chunk of code that can be executed to make something **happen**. Statements can can be long or short, and can span multiple lines. Any time you tell the interpreter to _do something_, you're executing a statement.
