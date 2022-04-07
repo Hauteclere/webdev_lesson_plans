@@ -221,6 +221,18 @@ Let's work through each of our tests in turn and get them to pass!!
 
 > Use `Math.max()` and `filter()` at first. Then refactor to be more efficient with a loop. This demonstrates how handy it is to have tests!
 
+>
+
+```JS
+const highestNumber = require("./index");
+
+describe('highestNumber', () => {
+    it('accepts an array', () => {
+        expect(highestNumber([])).toBe(null);
+    }); 
+});
+```
+
 ## Challenge:
 
 The marketing team is spending way too much time typing in hashtags. Let's help them with our own Hashtag Generator!
