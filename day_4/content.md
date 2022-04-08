@@ -30,6 +30,3 @@ Alice and Bob were on a holiday. Both of them took many pictures of the places t
 ### output
 - An array of numbers
 - Potentially, smaller than input
-
-## Challenge:
-Filter a JSON file programmatically and return a JSON string.
