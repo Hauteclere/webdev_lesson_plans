@@ -4,6 +4,7 @@
 [Here](https://create.kahoot.it/details/45cb777e-bf20-4208-b12e-8b917febdb63)
 
 ## Agenda
+- Survey!!
 - Callbacks review - again!
 - JS DOM
 - Events
