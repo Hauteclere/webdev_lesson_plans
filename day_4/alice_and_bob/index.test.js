@@ -19,7 +19,7 @@ test('outputs error msg if array has non-numbers', () => {
 });
 
 test('throws exception is second arg is not positive int', () => {
-    expect(() => { cullList([1, 1, 3], "hi") }).toThrow();
+    expect(() => { cullList([1, 1, 3], -3) }).toThrow();
 });
 
 test('returns an array', () => {
