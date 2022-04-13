@@ -1,7 +1,7 @@
 # Day 5
 
 ## Kahoot
-
+[Here](https://create.kahoot.it/details/45cb777e-bf20-4208-b12e-8b917febdb63)
 
 ## Agenda
 - Callbacks review - again!
@@ -104,6 +104,35 @@ button.addEventListener("click", logEvent(event));
 The reason is that we want to tell the button *what to do when it is clicked*. That means we need to hand it the **definition** of a function, not the result of a function execution. This is an extremely common pattern - we will frequently hand an anonymous callback to the DOM elements, which has the sole task of calling the real function we are interested in.
 
 ### Let's use it for something interesting now!
+
+To use ES6 syntax for import/export, we need to tweak our package-lock so Jest will understand it:
+
+```JSON
+{
+  "name": "dice-game",
+  "version": "1.0.0",
+  "description": "simple dice game in vanilla JS - used as intro to event handlers and DOM manipulation",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andrew-CC-Martin/dice-game.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Andrew-CC-Martin/dice-game/issues"
+  },
+  "homepage": "https://github.com/Andrew-CC-Martin/dice-game#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  },
+  "type": "module"
+}
+```
 
 Let's set it up so that when the button is clicked, we "roll the die", and change the image on the page to be one of the six dice images in the `/images/` folder.
 
