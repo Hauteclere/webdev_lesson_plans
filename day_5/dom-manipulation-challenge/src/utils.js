@@ -1,12 +1,12 @@
-export function changeBackground(colour) {
-    document.body.style.backgroundColor = `${colour}`;
+export function changeBackgroundColor(element, color) {
+    element.style.backgroundColor = color;
 }
 
-export function changeHeading(headingElement, newText) {
+export function changeHeading(element, newText) {
     if (!newText) {
-        headingElement.innerText = "Default Heading";
-        return
+        element.innerText = "Default Heading";
+        return;
     }
-    
-    headingElement.innerText = newText;
+
+    element.innerText = newText;
 }
