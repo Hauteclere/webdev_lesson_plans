@@ -16,6 +16,8 @@
 - [document.querySelector()](https://www.w3schools.com/jsref/met_document_queryselector.asp)
 - [Math.random()](https://www.w3schools.com/jsref/jsref_random.asp)
 - [Math.ceil()](https://www.w3schools.com/jsref/jsref_ceil.asp)
+- [jest expect](https://jestjs.io/docs/expect)
+- [array.every()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
 
 ## Content
 ### Callback Functions
