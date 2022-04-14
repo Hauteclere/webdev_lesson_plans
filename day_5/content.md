@@ -169,3 +169,15 @@ button.addEventListener("click", () => { changeImgSrc(image) });
 > No need to change `index.html`, it should be good to go as-is.
 
 We can use the DOM and events to change almost anything about our page! We can modify elements, css, content - you name it!
+
+## Dom Manipulation Challenge:
+
+Create a javascript and HTML page which allows users to set the background colour of the page to either red/blue/green by clicking the appropriate button.
+    
+> For extra credit - add a text-box that allows users to update the page heading.
+
+### Useful links for the challenge:
+- [Background colour styling...](https://www.w3schools.com/jsref/prop_style_backgroundcolor.asp)
+- [document.querySelectorAll()](https://www.w3schools.com/jsref/met_document_queryselectorall.asp)
+- [element.innerText](https://www.w3schools.com/jsref/prop_node_innertext.asp)
+- [input event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
