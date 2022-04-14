@@ -70,7 +70,7 @@ We associate a javascript function with the event. Let's look at how that works:
 
 - Clone down the starter code:
 ```Bash
-git clone https://github.com/CoderAcademy-ALL/dice-game-starting-code.git
+git clone https://github.com/Oliver-CoderAcademy/dice_game.git
 ```
 - Install packages:
 ```Bash
