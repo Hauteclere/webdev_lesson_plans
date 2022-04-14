@@ -135,6 +135,8 @@ To use ES6 syntax for import/export, we need to tweak our package-lock so Jest w
 }
 ```
 
+We also need to make a change to our `jest.config.js`. We need to replace the `module.exports` keyword with `export default`.
+
 Let's set it up so that when the button is clicked, we "roll the die", and change the image on the page to be one of the six dice images in the `/images/` folder.
 
 ```JS
