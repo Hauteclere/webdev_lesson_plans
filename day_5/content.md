@@ -106,7 +106,7 @@ The reason is that we want to tell the button *what to do when it is clicked*. T
 
 ### Let's use it for something interesting now!
 
-To use ES6 syntax for import/export, we need to tweak our package-lock so Jest will understand it:
+To use ES6 syntax for import/export, we need to tweak our `package.json` file so Jest will understand it:
 
 ```JSON
 {
@@ -136,6 +136,8 @@ To use ES6 syntax for import/export, we need to tweak our package-lock so Jest w
 ```
 
 We also need to make a change to our `jest.config.js`. We need to replace the `module.exports` keyword with `export default`.
+
+> If you want to see these changes in action, take a look at the `dice-game-starting-demo` directory in this repo. :)
 
 Let's set it up so that when the button is clicked, we "roll the die", and change the image on the page to be one of the six dice images in the `/images/` folder.
 
